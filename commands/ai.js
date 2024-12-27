@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 module.exports = {
-    name: "ai",
+    name: "fairy",
     description: "Interact with GPT4o model",
     nashPrefix: false,
     version: "1.0.0",
@@ -10,7 +10,7 @@ module.exports = {
     execute(api, event, args, prefix) {
         const { threadID, messageID, senderID } = event;
         let prompt = args.join(" ");
-        if (!prompt) return api.sendMessage("Please enter a prompt.", threadID, messageID);
+        if (!prompt) return api.sendMessage("𝗙𝗮𝗶𝗿𝘆: enter a prompt.", threadID, messageID);
         
         if (!global.handle) {
             global.handle = {};
@@ -30,7 +30,7 @@ module.exports = {
                     .then(response => {
                         const reply = response.data.response;
                         api.editMessage(
-                            "[ AI GPT ]\n\n" +
+                            "[ FAIRY GPT ]\n\n" +
                             reply,
                             info.messageID
                         );
