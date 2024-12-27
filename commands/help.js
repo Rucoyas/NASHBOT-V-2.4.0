@@ -16,7 +16,7 @@ module.exports = {
         pageNumber = isNaN(pageNumber) || pageNumber < 1 ? 1 : pageNumber;
 
         let commandList = "╭━━━━━༺༻━━━━━╮\n";
-     commandList += `          𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑮𝒖𝒊𝒅𝒆\n`;
+     commandList += `          🧚‍♂️𝗙𝗮𝗶𝗿𝘆 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗴𝘂𝗶𝗱𝗲\n`;
      commandList += `                 𝑷𝒂𝒈𝒆 ${pageNumber}\n`;
         commandList += "╰━━━━━༺༻━━━━━╯\n\n";
 
